@@ -34,6 +34,16 @@ QVariant GameBoard::data(const QModelIndex &index, int role) const
     return QVariant::fromValue(m_rawBoard[rowIndex].value);
 }
 
+size_t GameBoard::dimension() const
+{
+    return m_dimension;
+}
+
+size_t GameBoard::boardSize() const
+{
+    return m_boardSize;
+}
+
 void GameBoard::shuffle(void)
 {
     static auto seed = std::chrono::system_clock::now().time_since_epoch().count();
@@ -50,3 +60,8 @@ bool GameBoard::isPositionValid(const size_t position) const
 {
     return position < m_boardSize;
 }
+
+//bool GameBoard::isBoardValid() const
+//{
+//    ;
+//}

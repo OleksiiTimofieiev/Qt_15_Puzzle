@@ -10,8 +10,8 @@ GridView {
     }
 
     // usually spacing is the distance beetween elements
-    cellHeight: height / 4
-    cellWidth: width / 4
+    cellHeight: height / root.model.dimension
+    cellWidth: width / root.model.dimension
 
     // delegate visualizes date in the current context;
 
@@ -20,7 +20,7 @@ GridView {
         width: root.cellWidth
         height: root.cellHeight
 
-        visible: display != 16 // not to show 16 element
+        visible: display != root.model.hiddenElementValue // not to show 16 element
 
         Tile {
             // role:
