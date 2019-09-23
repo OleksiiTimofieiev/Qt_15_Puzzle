@@ -28,6 +28,14 @@ GridView {
 
             anchors.fill: _backgroundDelegate
             anchors.margins: 5
+            // in order to handle mouse input
+            MouseArea {
+                // set to the parent
+                anchors.fill: parent
+                onClicked: {
+                    root.model.move(index); // index is attached property
+                }
+            }
         }
     }
 

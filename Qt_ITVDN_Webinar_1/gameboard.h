@@ -16,7 +16,7 @@ class GameBoard : public QAbstractListModel
 
     public:
 
-        static constexpr size_t defaultPuzzleDimension = 4;
+        static constexpr size_t defaultPuzzleDimension{4};
 
         GameBoard(const size_t boardDimension = defaultPuzzleDimension, QObject *parent = nullptr);
 
