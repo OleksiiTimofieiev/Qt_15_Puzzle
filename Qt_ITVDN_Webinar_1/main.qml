@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 
-// 1 39 47
+// 1 50 10
 
 Window {
     id: root // for Binding
