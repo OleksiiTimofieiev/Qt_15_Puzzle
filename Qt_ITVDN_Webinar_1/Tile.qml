@@ -16,7 +16,7 @@ Rectangle {
         width: 1
     }
 
-    radius: 10
+    radius: 7
 
     Text {
         id: _firstText

@@ -223,6 +223,7 @@ Makefile: ../Qt_ITVDN_Webinar_1/Qt_ITVDN_Webinar_1.pro ../../Qt/5.12.3/mingw73_6
 		../../Qt/5.12.3/mingw73_64/mkspecs/features/qt_config.prf \
 		../../Qt/5.12.3/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../Qt/5.12.3/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../Qt/5.12.3/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt/5.12.3/mingw73_64/mkspecs/features/toolchain.prf \
 		../../Qt/5.12.3/mingw73_64/mkspecs/features/default_pre.prf \
@@ -412,6 +413,7 @@ Makefile: ../Qt_ITVDN_Webinar_1/Qt_ITVDN_Webinar_1.pro ../../Qt/5.12.3/mingw73_6
 ../../Qt/5.12.3/mingw73_64/mkspecs/features/qt_config.prf:
 ../../Qt/5.12.3/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../Qt/5.12.3/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../Qt/5.12.3/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../Qt/5.12.3/mingw73_64/mkspecs/features/toolchain.prf:
 ../../Qt/5.12.3/mingw73_64/mkspecs/features/default_pre.prf:

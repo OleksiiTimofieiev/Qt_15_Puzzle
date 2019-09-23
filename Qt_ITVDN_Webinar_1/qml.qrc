@@ -3,6 +3,5 @@
         <file>main.qml</file>
         <file>Tile.qml</file>
         <file>GameBoard.qml</file>
-        <file>TileModel.qml</file>
     </qresource>
 </RCC>
