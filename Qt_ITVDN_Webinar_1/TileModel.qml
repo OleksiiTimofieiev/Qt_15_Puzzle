@@ -32,7 +32,7 @@ ListModel {
         display: 10
     }
     ListElement {
-        display: 111
+        display: 11
     }
     ListElement {
         display: 12

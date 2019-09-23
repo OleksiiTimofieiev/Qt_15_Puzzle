@@ -12,7 +12,6 @@ Window {
 
     // Component is named by the name of its file;
 
-
     // better to use binding (to the size of the window)
 
     GameBoard {
