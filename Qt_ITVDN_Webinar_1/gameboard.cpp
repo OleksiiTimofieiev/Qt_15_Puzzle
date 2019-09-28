@@ -19,13 +19,13 @@ namespace
 
         bool result{false};
 
-        if (f.first == s.second)
+        if (f.first == s.first)
         {
             int distance = calcDistance(f.second, s.second);
             if (distance == 1)
                 return true;
         }
-        else if (f.second != s.second)
+        else if (f.second == s.second)
         {
             int distance = calcDistance(f.first, s.first);
             if (distance == 1)

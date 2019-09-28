@@ -24,7 +24,7 @@ GridView {
 
         Tile {
             // role:
-            displayText: display
+            displayText: display.toString()
 
             anchors.fill: _backgroundDelegate
             anchors.margins: 5

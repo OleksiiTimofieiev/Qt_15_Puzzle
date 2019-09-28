@@ -3,6 +3,11 @@ import QtQuick.Window 2.12
 
 // 1 50 10
 
+// controller for timer => with some point in window;
+// win and restart after each step => pop up element in qml;
+// restart the game with controller => register type for qml;
+// best result in panel => some file with controller;
+
 Window {
     id: root // for Binding
     visible: true
