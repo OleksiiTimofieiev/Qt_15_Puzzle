@@ -3,8 +3,6 @@ import QtQuick 2.0
 // basic component that can draw itself
 // to have help press  F1
 
-#define RADIUS 10;
-
 Rectangle {
     id: root // for Binding
     // property | value
@@ -18,7 +16,7 @@ Rectangle {
         width: 1
     }
 
-    radius: RADIUS
+    radius: 10
 
     Text {
         id: _firstText

@@ -15,6 +15,7 @@ class GameBoard : public QAbstractListModel
     Q_PROPERTY(int hiddenElementValue READ boardSize CONSTANT)
 
     public:
+    using Position = std::pair<size_t, size_t>;
 
         static constexpr size_t defaultPuzzleDimension{4};
 
@@ -31,13 +32,19 @@ class GameBoard : public QAbstractListModel
             bool operator==(const size_t other) {
                 return other == value;
             }
+
         };
+        Q_INVOKABLE bool move(int index);
 
         int rowCount(const QModelIndex & parent = QModelIndex{}) const override;
         QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
+
         size_t dimension() const;
         size_t boardSize() const;
+
+
+        Position getRowCol(size_t index) const;
 
 private:
         std::vector<Tile> m_rawBoard;
