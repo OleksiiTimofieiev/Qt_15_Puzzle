@@ -20,7 +20,7 @@ GridView {
         width: root.cellWidth
         height: root.cellHeight
 
-        visible: display !== root.model.hiddenElementValue // not to show 16 element
+        visible: display != root.model.hiddenElementValue // not to show 16 element
 
         Tile {
             // role:
